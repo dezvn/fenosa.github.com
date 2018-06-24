@@ -1,0 +1,28 @@
+#relojreal {
+  width: 150px;
+  height: 150px;
+  background: url(../../img/relojsinma.png) no-repeat;
+}
+#segundos, #minutos, #horas {
+   background-image: url(../../img/analogseconds.png);
+  background-position: center center;
+  height: 120px;
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  left: 61px;
+}
+
+#segundos {
+  background-size: 320px;
+  -webkit-filter: grayscale(1);
+}
+
+#minutos {
+  background-size: 280px;
+}
+
+#horas {
+  background-size: 200px;
+  background-repeat: no-repeat;
+}

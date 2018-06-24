@@ -1,0 +1,618 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#barra_sup{
+    position: absolute;     /*Indica que la posicion sera relativa*/
+    height: 2%;           /*Alto*/
+    width: 45%;           /*Ancho*/
+    top: 0%;             /*posicion en Y*/
+    left: -25%;            /*posicion en X*/
+    background-color: rgb(1, 79, 117); /*Color de fondo*/
+    -webkit-animation-name: animacion-barrasup;
+        -webkit-animation-duration: 1.3s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animacion-barrasup{
+    from{
+        left: -25%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+#barra_inf{
+    position: absolute;        /*Indica que la posicion sera relativa*/
+    height: 2%;             /*Alto*/
+    width: 45%;             /*Ancho*/
+    top: 100%;              /*posicion en Y*/
+    left: -25%;            /*posicion en X*/
+    background-color: rgb(1, 79, 117); /*Color de fondo*/
+    -webkit-animation-name: animacion-barrainf;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animacion-barrainf{
+    from{
+        left: -20%;
+        top: 98%;
+    }
+    to{
+        left: 55%;
+        top: 98%;
+    }
+}
+
+.logo{
+    text-align: center;
+    width: 100%;
+    -webkit-animation-name: logo-animation;
+        -webkit-animation-duration: 1.25s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes logo-animation{
+    0%{
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 0%;
+    }
+    50%{
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+#cuadros1{
+    position: fixed;
+    height: 334px;
+    width: 409px;
+    top: -20%;
+    left: 85%;
+    -webkit-animation-name: cuadros-animation;
+      -webkit-animation-duration: 1.8s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes cuadros-animation{
+    0%{
+        opacity: 0;
+        top: -40%;
+    }
+    50%{
+        top: -40%;
+    }
+    100%{
+        top: -20%;
+    }
+}
+
+.soluciones{
+    width: 316px;
+    height: 160px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%,-50%);
+    -webkit-animation-name: soluciones-animation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes soluciones-animation{
+    0%{
+        opacity: 0;
+        left: 110%;
+    }
+    50%{
+        left: 110%
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+#cuadros2{
+    position: absolute;
+    top: 78%;
+    left: -5%;
+    -webkit-animation-name: cuadros-animation2;
+      -webkit-animation-duration: 1.8s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes cuadros-animation2{
+    0%{
+        top: 100%;
+    }
+    50%{
+        top: 100%;
+    }
+    100%{
+        top: 80;
+    }
+}
+
+#texto-anim{
+    font-family: Arial;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%,-50%);
+    -webkit-animation: texto-animation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes texto-animation{
+    0%{
+        left: -100%;
+    }
+    50%{
+        left: -100%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+.edificio{
+    height: 263px;
+    width: 422.5px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    -webkit-animation: edificio-anim;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@keyframes edificio-anim{
+    0%{
+        top: 140%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+
+#barra-edificio{
+    position: absolute;     /*Indica que la posicion sera relativa*/
+    height: 1%;           /*Alto*/
+    width: 75%;           /*Ancho*/
+    top: 63.7%;             /*posicion en Y*/
+    left: 0%;            /*posicion en X*/
+    background-color: #D0D0D0; /*Color de fondo*/
+    -webkit-animation-name: barra-edificio;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes barra-edificio{
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(0)
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#barra-lateral{
+    height: 100%;
+    width: 25%;
+    background-color: #003F62;
+    position: absolute;
+    top: 0%;
+    left: 75%;
+    -webkit-animation: barra-lateral-animation;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes barra-lateral-animation{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.escala-media{
+    height: auto;
+    width: auto;
+    transform: scale(.5) translate(50%,50%);
+}
+
+.escala-iconos{
+    position: absolute;
+    height: auto;
+    width: auto;
+    transform: scale(.5) translate(50%,50%);
+}
+
+#logo-reducido{
+    position: absolute;
+    opacity: 1;
+    top: 80%;
+    left: 74%;
+    z-index: 1;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#texto-lateral1{
+    position: absolute;
+    font-family: Arial;
+    font-size: 1.2em;
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    top: 20%;
+    left: 78%;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#texto-lateral2{
+    position: absolute;
+    font-family: Arial;
+    font-size: 1.2em;
+    vertical-align: text-top;
+    height: auto;
+    color: rgb(255, 255, 255);
+    top: 20%;
+    left: 98.5%;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes elementos-barra-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#barra-amarilla1{
+    position: absolute;
+    transform: scaleY(.7);
+    top: 10%;
+    left: -20%;
+    -webkit-animation-name: animacion-barra-amarilla1;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes animacion-barra-amarilla1{
+    from{
+        left: -100%;
+    }
+    to{
+        left: -20;
+    }
+}
+
+#barra-amarilla2{
+    position: absolute;
+    transform: scale(1);
+    transform-origin: 0%;
+    left: -30%;
+    top: 12.8%;    
+    z-index: 0;
+    -webkit-animation-name: animacion-barra-amarilla2;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes animacion-barra-amarilla2{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+#texto-panel-sup{
+    font-family: Arial;
+    font-size: 2.2em;
+    color: #003F62;
+    font-weight: 700;
+    position: relative;
+    left: 0%;
+    -webkit-animation-name: texto-panel-sup;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes texto-panel-sup{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+#icono-inf1{
+    position: absolute;
+    height: auto;
+    top: 60%;
+    left: 26%;
+    transform-origin: 2%;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#icono-izq{
+    position: absolute;
+    height: auto;
+    top: 36%;
+    left: 5%;
+    transform-origin: 2%;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#icono-sup{
+    position: absolute;
+    height: auto;
+    top: 11%;
+    left: 27%;
+    transform-origin: 2%;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#icono-der{
+    position: absolute;
+    height: auto;
+    top: 31.5%;
+    left: 53%;
+    transform-origin: 2%;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#fechas-panel{
+    position: absolute;
+    width: 15%;
+    height: 3.5%;
+    border-radius: 1rem;
+    background-color: #F1D13D;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#reloj{
+    position: absolute;
+    transform: scale(.5) translate(10%, 50%);
+    left: 0%;
+    top: -9%;
+    -webkit-animation: elementos-barra-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.lineashoriz1{
+    position: absolute;
+    height: .5%;
+    width: 46%;
+    background-color: #003F62;
+    -webkit-animation: linea1-animation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes linea1-animation{
+    0%{
+        left: -100%;
+    }
+    50%{
+        left: -100%;
+    }
+    100%{
+        left: 16.5%;
+    }
+}
+
+.lineashoriz2{
+    position: absolute;
+    height: .5%;
+    width: 17%;
+    background-color: #003F62;
+    -webkit-animation: linea5-animation;
+    -webkit-animation-duration: 2.3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes linea5-animation{
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.lineasvertic1{
+    position: absolute;
+    height: 24%;
+    width: .3%;
+    background-color: #003F62;
+    -webkit-animation: linea2-animation;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes linea2-animation{
+    0%{
+        top: 200%;
+    }
+    50%{
+        top: 200%
+    }
+    100%{
+        top: 18%;
+    }
+}
+
+.lineasvertic2{
+    position: absolute;
+    height: 24%;
+    width: .3%;
+    background-color: #003F62;
+    -webkit-animation-name: lineavertic3-animation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes lineavertic3-animation{
+    0%{
+        transform: scale(0)
+    }
+    90%{
+        transform: scale(0)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+.lineasvertic3{
+    position: absolute;
+    height: 26.5%;
+    width: .3%;
+    background-color: #003F62;
+    -webkit-animation: linea6-animation;
+    -webkit-animation-duration: 2.8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes linea6-animation{
+    0%{
+        top: 100%;
+    }
+    80%{
+        top: 100%;
+    }
+    100%{
+        top: 55%;
+    }
+}
+
+.lineasvertic4{
+    position: absolute;
+    height: 23%;
+    width: .3%;
+    background-color: #003F62;
+    -webkit-animation: linea3-animation;
+    -webkit-animation-duration: 2.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes linea3-animation{
+    0%{
+        top: -100%;
+    }
+    60%{
+        top: -100%;
+    }
+    100%{
+        top: 18%;
+    }
+}
+
+.lineashoriz3{
+    position: absolute;
+    height: .5%;
+    width: 15%;
+    background-color: #003F62;
+    -webkit-animation: linea4-animation;
+    -webkit-animation-duration: 2.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes linea4-animation{
+    0%{
+        left: 100%;
+    }
+    60%{
+        left: 100%;
+    }
+    100%{
+        left: 47.5%;
+    }
+}
